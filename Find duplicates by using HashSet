@@ -1,0 +1,14 @@
+import java.util.HashSet;
+
+public class FindDuplicates {
+    public static void main(String[] args) {
+        int arr[]={12,45,89,12,45,113,225,40,113};
+        HashSet<Integer>set=new HashSet<>();
+        for(int num: arr){
+            if (set.contains(num)) {
+                System.out.println("duplicate found for "+ num);
+            }
+            set.add(num);
+        }
+    }
+}
